@@ -1,0 +1,47 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>kalkulaator praktikum 7</title>
+	<meta charset="UTF-8" />  
+	<meta name="keywords" content="HTML,php,HTML5,õpime" />
+	 <meta name="author" content="Monica Laud" />
+
+<link rel="stylesheet" href="kalkulaator.css" type="text/css"
+	media="all" />
+</head>
+<body>
+<main>
+	<h1>See on lihtsamate arvutustehete kalkulaator.</h1>
+	<p>Katseta :D </p>
+	<form method="post" attribute="post" action="yks.php">
+		<dl>
+			<dt>
+				<label for="esimene">sisesta esimene number:</label>
+			</dt>
+			<dd>
+				<input type="number" id="esimene" name="esimene" min="0.1" step="0.01" required="required">
+			</dd>
+			<dt>
+				<label for="teine">sisesta teine number:</label>
+			</dt>
+			<dd>
+				<input type="number" id="teine" name="teine" min="0.1" step="0.01" required="required">
+			</dd>
+			<dd>
+				<input type="radio" name="group1" id="add" value="add"
+					checked="true"><label for="add">+ liida</label> <input
+					type="radio" name="group1" id="subtract" value="subtract"><label
+					for="subtract">- lahuta</label> <input type="radio" name="group1"
+					id="times" value="times"><label for="times">x
+					korruta</label> <input type="radio" name="group1" id="divide"
+					value="divide"><label for="divide">/ jaga</label>
+			</dd>
+			<dd class="arvuta">
+				<button type="submit" name="vastus" id="vastus" value="vastus">arvuta</button>
+			</dd>
+		</dl>
+	</form>
+</main>
+</body>
+</html>
